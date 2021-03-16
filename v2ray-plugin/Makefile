@@ -42,8 +42,8 @@ endef
 
 ifeq ($(CONFIG_$(PKG_NAME)_INCLUDE_GOPROXY),y)
 export GO111MODULE=on
-export GOPROXY=https://goproxy.io
-#export GOPROXY=https://mirrors.aliyun.com/goproxy/
+#export GOPROXY=https://goproxy.io
+export GOPROXY=https://mirrors.aliyun.com/goproxy/
 endif
 
 define Package/$(PKG_NAME)
